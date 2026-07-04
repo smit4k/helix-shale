@@ -1,0 +1,223 @@
+# Author: Smit Patil / smit4k
+# Contact: smit@smitp.cc
+# Shale for Helix
+
+"ui.background" = { fg = "fg", bg = "bg" }
+"ui.background.separator" = { fg = "border" }
+"ui.cursor" = { fg = "bg", bg = "fg" }
+"ui.cursor.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.insert" = { fg = "bg", bg = "string" }
+"ui.cursor.select" = { fg = "bg", bg = "keyword" }
+"ui.cursor.match" = { fg = "number", modifiers = ["bold"] }
+"ui.cursor.primary" = { fg = "bg", bg = "fg" }
+"ui.cursor.primary.normal" = { fg = "bg", bg = "fg" }
+"ui.cursor.primary.insert" = { fg = "bg", bg = "string" }
+"ui.cursor.primary.select" = { fg = "bg", bg = "keyword" }
+
+"ui.debug.breakpoint" = { fg = "error", bg = "bg_alt" }
+"ui.debug.active" = { bg = "bg_alt" }
+
+"ui.gutter" = { fg = "comment", bg = "bg" }
+"ui.gutter.selected" = { fg = "fg", bg = "cursorline", modifiers = ["bold"] }
+"ui.linenr" = { fg = "comment", bg = "bg" }
+"ui.linenr.selected" = { fg = "fg", bg = "cursorline", modifiers = ["bold"] }
+
+"ui.statusline" = { fg = "fg", bg = "surface" }
+"ui.statusline.inactive" = { fg = "fg_dim", bg = "bg_alt" }
+"ui.statusline.normal" = { fg = "bg", bg = "func", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg", bg = "string", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg", bg = "keyword", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "border", bg = "surface" }
+
+"ui.bufferline" = { fg = "fg_dim", bg = "surface" }
+"ui.bufferline.active" = { fg = "fg", bg = "bg", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg_alt" }
+
+"ui.popup" = { fg = "fg", bg = "bg_alt" }
+"ui.popup.info" = { fg = "fg", bg = "bg_alt" }
+"ui.picker.header" = { fg = "fg_dim", bg = "surface" }
+"ui.picker.header.column" = { fg = "fg_dim", bg = "surface" }
+"ui.picker.header.column.active" = { fg = "func", bg = "surface", modifiers = ["bold"] }
+"ui.window" = { fg = "border" }
+"ui.help" = { fg = "fg", bg = "bg_alt" }
+"ui.text" = { fg = "fg" }
+"ui.text.focus" = { fg = "fg", bg = "selection" }
+"ui.text.inactive" = { fg = "fg_dim" }
+"ui.text.info" = { fg = "fg_dim" }
+"ui.text.directory" = { fg = "func", modifiers = ["bold"] }
+
+"ui.virtual.ruler" = { bg = "surface" }
+"ui.virtual.whitespace" = { fg = "border" }
+"ui.virtual.indent-guide" = { fg = "border" }
+"ui.virtual.inlay-hint" = { fg = "comment", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.parameter" = { fg = "comment", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "comment", modifiers = ["italic"] }
+"ui.virtual.wrap" = { fg = "comment" }
+"ui.virtual.jump-label" = { fg = "keyword", underline = { style = "line" }, modifiers = ["bold"] }
+
+"ui.menu" = { fg = "fg", bg = "surface" }
+"ui.menu.selected" = { fg = "fg", bg = "selection", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "fg_dim", bg = "border" }
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+"ui.highlight" = { bg = "cursorline" }
+"ui.highlight.frameline" = { bg = "bg_alt" }
+"ui.cursorline.primary" = { bg = "cursorline" }
+"ui.cursorline.secondary" = { bg = "cursorline" }
+"ui.cursorcolumn.primary" = { bg = "cursorline" }
+"ui.cursorcolumn.secondary" = { bg = "cursorline" }
+
+"attribute" = { fg = "type" }
+"type" = { fg = "type" }
+"type.builtin" = { fg = "type", modifiers = ["italic"] }
+"type.parameter" = { fg = "type" }
+"type.enum" = { fg = "type" }
+"type.enum.variant" = { fg = "constant" }
+"constructor" = { fg = "type" }
+
+"constant" = { fg = "constant" }
+"constant.builtin" = { fg = "constant", modifiers = ["italic"] }
+"constant.builtin.boolean" = { fg = "constant" }
+"constant.character" = { fg = "string" }
+"constant.character.escape" = { fg = "number" }
+"constant.numeric" = { fg = "number" }
+"constant.numeric.integer" = { fg = "number" }
+"constant.numeric.float" = { fg = "number" }
+
+"string" = { fg = "string" }
+"string.regexp" = { fg = "number" }
+"string.special" = { fg = "number" }
+"string.special.path" = { fg = "string" }
+"string.special.url" = { fg = "hint", underline = { style = "line" }, modifiers = ["italic"] }
+"string.special.symbol" = { fg = "constant" }
+
+"comment" = { fg = "comment", modifiers = ["italic"] }
+"comment.line" = { fg = "comment", modifiers = ["italic"] }
+"comment.line.documentation" = { fg = "comment", modifiers = ["bold", "italic"] }
+"comment.block" = { fg = "comment", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "comment", modifiers = ["bold", "italic"] }
+"comment.unused" = { fg = "comment" }
+
+"variable" = { fg = "fg" }
+"variable.builtin" = { fg = "keyword", modifiers = ["italic"] }
+"variable.parameter" = { fg = "param" }
+"variable.parameter.builtin" = { fg = "param", modifiers = ["italic"] }
+"variable.other" = { fg = "fg" }
+"variable.member" = { fg = "member" }
+"variable.member.private" = { fg = "member" }
+
+"label" = { fg = "keyword" }
+
+"punctuation" = { fg = "operator" }
+"punctuation.delimiter" = { fg = "operator" }
+"punctuation.bracket" = { fg = "fg_dim" }
+"punctuation.special" = { fg = "number" }
+
+"keyword" = { fg = "keyword" }
+"keyword.control" = { fg = "keyword" }
+"keyword.control.conditional" = { fg = "keyword" }
+"keyword.control.repeat" = { fg = "keyword" }
+"keyword.control.import" = { fg = "keyword" }
+"keyword.control.return" = { fg = "keyword", modifiers = ["italic"] }
+"keyword.control.exception" = { fg = "keyword" }
+"keyword.operator" = { fg = "keyword" }
+"keyword.directive" = { fg = "func" }
+"keyword.function" = { fg = "keyword", modifiers = ["italic"] }
+"keyword.storage" = { fg = "type" }
+"keyword.storage.type" = { fg = "type" }
+"keyword.storage.modifier" = { fg = "type" }
+
+"operator" = { fg = "operator" }
+
+"function" = { fg = "func" }
+"function.builtin" = { fg = "constant", modifiers = ["italic"] }
+"function.method" = { fg = "func" }
+"function.method.private" = { fg = "func" }
+"function.macro" = { fg = "keyword" }
+"function.special" = { fg = "keyword" }
+
+"tag" = { fg = "keyword" }
+"tag.builtin" = { fg = "constant" }
+"namespace" = { fg = "type" }
+"special" = { fg = "number" }
+
+"markup.heading" = { fg = "func", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "comment" }
+"markup.heading.1" = { fg = "keyword", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "func", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "type", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "string", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "constant", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "fg_dim", modifiers = ["bold"] }
+"markup.list" = { fg = "keyword" }
+"markup.list.unnumbered" = { fg = "keyword" }
+"markup.list.numbered" = { fg = "keyword" }
+"markup.list.checked" = { fg = "git_add" }
+"markup.list.unchecked" = { fg = "fg_dim" }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link" = { fg = "hint" }
+"markup.link.url" = { fg = "hint", underline = { style = "line" }, modifiers = ["italic"] }
+"markup.link.label" = { fg = "string" }
+"markup.link.text" = { fg = "hint", underline = { style = "line" } }
+"markup.quote" = { fg = "comment", modifiers = ["italic"] }
+"markup.raw" = { fg = "constant", bg = "surface" }
+"markup.raw.inline" = { fg = "constant", bg = "surface" }
+"markup.raw.block" = { fg = "constant" }
+
+"diff.plus" = { fg = "git_add" }
+"diff.plus.gutter" = { fg = "git_add" }
+"diff.minus" = { fg = "git_delete" }
+"diff.minus.gutter" = { fg = "git_delete" }
+"diff.delta" = { fg = "git_change" }
+"diff.delta.moved" = { fg = "git_change" }
+"diff.delta.conflict" = { fg = "warning" }
+"diff.delta.gutter" = { fg = "git_change" }
+
+"warning" = { fg = "warning" }
+"error" = { fg = "error" }
+"info" = { fg = "info" }
+"hint" = { fg = "hint" }
+"diagnostic" = { underline = { color = "hint", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "hint", style = "curl" } }
+"diagnostic.info" = { underline = { color = "info", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "warning", style = "curl" } }
+"diagnostic.error" = { underline = { color = "error", style = "curl" } }
+"diagnostic.unnecessary" = { fg = "comment" }
+"diagnostic.deprecated" = { fg = "comment", modifiers = ["crossed_out"] }
+"tabstop" = { bg = "surface" }
+
+[palette]
+bg = "#1c1c1e"
+bg_alt = "#222224"
+surface = "#282829"
+border = "#4a4a4f"
+fg = "#d6e0d8"
+fg_dim = "#8a9e91"
+comment = "#5c7265"
+keyword = "#c97fa0"
+string = "#a8c97f"
+func = "#7fb4c9"
+type = "#d4a96a"
+constant = "#9ed490"
+number = "#e8956d"
+operator = "#b0c9be"
+selection = "#2e3a4a"
+cursorline = "#26262a"
+git_add = "#6aab78"
+git_change = "#c9a84c"
+git_delete = "#b05e5e"
+error = "#cc6666"
+warning = "#d4a96a"
+hint = "#7fb4c9"
+param = "#c9b97f"
+member = "#9ec4d4"
+info = "#a8c97f"
+diff_add_bg = "#1a2b1e"
+diff_change_bg = "#26231a"
+diff_delete_bg = "#2b1a1a"
+md_h1_bg = "#231b20"
+md_h2_bg = "#1a1e23"
+md_h3_bg = "#1e1e1a"
+md_h4_bg = "#1a2018"
